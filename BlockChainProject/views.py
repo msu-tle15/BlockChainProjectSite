@@ -7,8 +7,8 @@ def index(request):
 
 
 def transaction(request):
-    return HttpResponse("Transaction page.")
+    return render(request, "BlockChainProject/transaction.html")
 
 
 def test(request):
-    return HttpResponse("Test Page.")
+    return render(request, "BlockChainProject/test.html")
